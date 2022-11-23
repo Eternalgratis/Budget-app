@@ -1,10 +1,18 @@
 <% provide(:title, "WELCOME TO THE BUDGET APP!") %>
 <div class = "splash-heading">
-<%# <%= image_tag("<%= image_tag("logos/logo.jpg")%>
+    <%# <%= image_tag("<%= image_tag("logos/logo.jpg")%>
 
-<div class='btn-group flex'>
-    <%= link_to 'Sign Up',  new_user_registration_path, class: 'btn-white' %>
-    <%= link_to 'Log In', new_user_session_path, class: 'btn-main' %>
-    <%= link_to 'Sign Out', destroy_user_session_path, class: 'btn-main' %>
-</div>
+    <div class='btn-group flex'>
+    <p>WELCOME TO THE WHOLESOME BUDGET APP</p>
+        <% if user_signed_in?%>
+            <h3>Welcome <%= current_user.name %> TO THE WHOLESOME BUDGET APP</h3>
+            <%= link_to 'view group', groups_path %>
+            <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+
+            <% else %>
+            <%# <%= link_to 'Sign Out', destroy_user_session_path, class: 'btn-main' %>
+            <%= link_to 'Log In', new_user_session_path, class: 'btn-main' %>
+            <%= link_to 'Sign Up',  new_user_registration_path, class: 'btn-white' %>
+        <% end %>
+    </div>
 </div>
