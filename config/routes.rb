@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-   root "splash#index"
+  #  root "splash#index"
+  root "groups#index"
    resources :users, only: [:index]
     resources :groups, only: [:index, :show, :edit, :update, :destroy]
      resources :expenditures, only: [:index, :show, :edit, :update, :destroy]
