@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Groups</h1>
+<div class="group-title">
+  <h1>Groups</h1>
+</div>
 
 <div id="groups">
   <% @groups.each do |group| %>
@@ -11,4 +13,4 @@
   <% end %>
 </div>
 
- <%= link_to "New group", new_group_path %>
+ <div class="new-group"><%= link_to "New group", new_group_path %></div>

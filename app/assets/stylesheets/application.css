@@ -13,23 +13,34 @@
 }
 
 .splash-container {
-    display: flex;
-    margin: 10px;
-    padding: 10px;
+    /* display: flex;
     align-items: center;
+    justify-content: center; */
+}
+
+.splash-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* title {
+    display: flex;
+    background-color: #3778c2; */
+
+h1 {
+    display: flex;
+    padding: 10px;
+    /* font-size: 50px; */
+    align-items: center;
+    background-color: rgb(13, 109, 138);
     justify-content: center;
 }
 
-title {
-    margin: 10px;
-    padding: 10px;
-    background-color: #3778c2;
-}
-
 h3 {
-    margin: 10px;
     padding: 10px;
     font-size: 30px;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(25, 180, 228);   
 }
 
@@ -41,6 +52,7 @@ h3 {
     color: #fff;
     border-radius: 10px;
     align-items: flex-end;
+    text-decoration: none;
 }
 
 .sign-out-btn, .log-in-btn, .sign-up-btn {
@@ -50,13 +62,11 @@ h3 {
     padding: 5px;
     border-radius: 10px;
     color: #fff;
+    text-decoration: none;
 }
 
 .new_user {
-    background-color: #fff;
-    line-height: 30px;
-    padding: 20px;
-    font-size: 25px;
+
 }
 
 .field {
@@ -73,3 +83,25 @@ h3 {
 .email {
     background-color: #fff;
 }
+
+.button_to {
+    font-size: 2em;
+}
+
+.group-show-container {
+    background-color: red;
+}
+
+.new_group {
+    background-color: red;
+}
+
+/* .sign-up-container {
+    background-color: red;
+} */
+
+/* .group-form {
+    background-color: #3778c2;
+    margin: 10px;
+    padding: 10px;
+} */
