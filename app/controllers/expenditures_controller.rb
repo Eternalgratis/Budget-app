@@ -4,16 +4,24 @@ class ExpendituresController < ApplicationController
 
   # GET /expenditures or /expenditures.json
   def index
-    @expenditures = Expenditure.all
+     @group = Group.find_by(id: params[:group_id])
+     @expenditures = current_user.expenditures.all
   end
 
   # GET /expenditures/1 or /expenditures/1.json
   def show
+    @expenditure = Expenditure.find_by(id: params[:expenditure_id])
   end
 
   # GET /expenditures/new
+  # def new
+  #   @group = current_user.groups.find_by(id: params[:group_id])
+  #   @expenditure = current_user.expenditures.new
+  # end
   def new
-    @expenditure = Expenditure.new
+    @group = current_user.groups.find_by(id: params[:group_id])
+    @expenditure = current_user.expenditures.new
+    @random = params[:id]
   end
 
   # GET /expenditures/1/edit
@@ -22,11 +30,14 @@ class ExpendituresController < ApplicationController
 
   # POST /expenditures or /expenditures.json
   def create
-    @expenditure = Expenditure.new(expenditure_params)
+    # @expenditure = Expenditure.new(expenditure_params)
+    @group = current_user.groups.find_by(id: params[:group_id])
+    @expenditure = current_user.expenditures.build(expenditure_params)
+
 
     respond_to do |format|
       if @expenditure.save
-        format.html { redirect_to expenditure_url(@expenditure), notice: "Expenditure was successfully created." }
+        format.html { redirect_to group_url(@expenditure.group_id), notice: "Expenditure was successfully created." }
         format.json { render :show, status: :created, location: @expenditure }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -61,11 +72,11 @@ class ExpendituresController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_expenditure
-      @expenditure = Expenditure.find(params[:id])
+      @expenditure = Expenditure.find_by(id: params[:expenditure_id])
     end
 
     # Only allow a list of trusted parameters through.
     def expenditure_params
-      params.require(:expenditure).permit(:name, :amount)
+      params.require(:expenditure).permit(:name, :amount, :group_id)
     end
 end

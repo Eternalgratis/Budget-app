@@ -21,5 +21,5 @@ Rails.application.routes.draw do
   #  root "groups#index"
    resources :users, only: [:index]
     resources :groups
-     resources :expenditures, only: [:index, :new, :show, :edit, :update, :destroy]
+     resources :expenditures
 end
