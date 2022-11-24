@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_group, only: %i[ show edit update destroy ]
+  before_action :set_group, only: %i[ index show edit update destroy ]
 
   # GET /groups or /groups.json
   def index
@@ -9,6 +9,7 @@ class GroupsController < ApplicationController
 
   # GET /groups/1 or /groups/1.json
   def show
+    @group = Group.find(params[:id])
   end
 
   # GET /groups/new
@@ -22,11 +23,11 @@ class GroupsController < ApplicationController
 
   # POST /groups or /groups.json
   def create
-    @group = Group.new(group_params)
+    @group = current_user.groups.new(group_params)
 
     respond_to do |format|
       if @group.save
-        format.html { redirect_to group_url(@group), notice: "Group was successfully created." }
+        format.html { redirect_to groups_path, notice: "Group was successfully created." }
         format.json { render :show, status: :created, location: @group }
       else
         format.html { render :new, status: :unprocessable_entity }

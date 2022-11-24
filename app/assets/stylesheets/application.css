@@ -1,6 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-splash-heading {
-    color: #333;
-    size: 40px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #cecfd1;
+}
+
+.splash-logo {
+    width: 40%;
+    height: 30%;
+}
+
+.splash-container {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+title {
+    margin: 10px;
+    padding: 10px;
+    background-color: #3778c2;
+}
+
+h3 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: rgb(25, 180, 228);   
+}
+
+.view-grp-btn {
+    background-color: rgb(13, 109, 138);
+    margin: 30px;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    align-items: flex-end;
+}
+
+.sign-out-btn, .log-in-btn, .sign-up-btn {
+    background-color: rgb(13, 109, 138);
+    margin: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.new_user {
+    background-color: #fff;
+    line-height: 30px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.field {
+    background-color: #fff;
+}
+
+.sign-up-container {
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+    background-color: #fff;
 }
