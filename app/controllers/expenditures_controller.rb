@@ -21,7 +21,6 @@ class ExpendituresController < ApplicationController
   def new
     @group = current_user.groups.find_by(id: params[:group_id])
     @expenditure = current_user.expenditures.new
-    @random = params[:id]
   end
 
   # GET /expenditures/1/edit
