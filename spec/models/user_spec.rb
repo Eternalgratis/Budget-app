@@ -12,4 +12,19 @@ RSpec.describe User, type: :model do
   it '@user created should be valid' do
     expect(@user).to be_valid
   end
+
+  it 'name value should be present' do
+    @user.name = 'Teetee'
+    expect(@user.name).to eq('Teetee')
+  end
+
+  it 'email value should be present' do
+    @user.email = 'teetee@gmail.com'
+    expect(@user.email).to eq('teetee@gmail.com')
+  end
+
+  it 'password value should be present' do
+    @user.password = 'teetee12'
+    expect(@user.password).to eq('teetee12')
+  end
 end
