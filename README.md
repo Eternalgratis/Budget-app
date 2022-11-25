@@ -37,7 +37,7 @@ This a mobile web application where you can manage your budget and have a list o
 - Run `rails server`
 - Open Browser `http://localhost:3000/`
 
-## Testing
+## For Testing
 - Run `rspec`
 
 👤 **Apuabi Titilope**
