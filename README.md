@@ -24,8 +24,9 @@ This a mobile web application where you can manage your budget and have a list o
 ## Entity relationship diagram for DB
 ![](./app/assets/images/ERD.png)
 
-# Live Demo of Budget App
 
+# Live Demo of Budget App
+[Live Demo Link](#)
 
 ## Getting Started
 
