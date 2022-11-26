@@ -7,3 +7,4 @@
 #   Character.create(name: "Luke", movie: movies.first)
 # bin/rails generate migration CreateJoinTableExpendituresGroups groups expenditures
 #  rails g migration AddGroupRefToExpenditure
+# rails g migration CreateExpenditureGroups

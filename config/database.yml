@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: Budget_app_development
+  database: Whole_app_development
   username: postgres
   password: postgres
   host: 127.0.0.1
@@ -61,7 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: Budget_app_test
+  database: Whole_app_test
   username: postgres
   password: postgres
   host: 127.0.0.1
@@ -89,6 +89,6 @@ test:
 #
 production:
   <<: *default
-  database: Budget_app_production
-  username: Budget_app
-  password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
+  database: Whole_app_production
+  username: Whole_app
+  password: <%= ENV["WHOLE_APP_DATABASE_PASSWORD"] %>
