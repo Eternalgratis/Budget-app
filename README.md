@@ -29,7 +29,7 @@ This a mobile web application where you can manage your budget and have a list o
 https://www.loom.com/share/986104a3758741f89d0808f573bb0c4c
 
 # Live Demo of Budget App
-[Live Demo Link](#)
+[Live Demo Link](https://whispering-crag-22353.herokuapp.com/users/sign_up)
 
 ## Getting Started
 
