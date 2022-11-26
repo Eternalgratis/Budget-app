@@ -1,0 +1,38 @@
+<h1>New group</h1>
+
+<%= form_with(model: @group, class: "contents") do |form| %>
+  <% if @group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+        <% @group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <div class="new-expend-cont">
+  <div class="new-expend-name">
+    <%= form.label :name %>
+    <%= form.text_field :name, required: true %>
+  </div>
+
+  <div class="new-expend-icon">
+    <%= form.label :icon %>
+    <%= form.text_field :icon, required: true %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit "Add A New Category" %>
+  </div>
+  </div>
+<% end %>
+
+
+<br>
+
+<div>
+  <%= link_to "Back to groups", groups_path %>
+</div>

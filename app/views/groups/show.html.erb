@@ -1,0 +1,22 @@
+<div class="navbar-expend">
+  <h1 class="main-title">Expenditure</h1>
+  <% if user_signed_in? %>
+     <%= link_to("Log out", destroy_user_session_path, method: :delete) %>    
+  <% end %>
+</div>
+
+<p style="color: green"><%= notice %></p>
+
+<%= render "groups/group_show_html" %>
+
+<div>
+ <%= render "expenditures/expenditure" %>
+</div>
+
+<div class="expend-page">
+
+  <div class="back-expend-btn"> 
+    <%= link_to "Back to groups", groups_path, class: "back-grp-btn" %>
+    <%= link_to "Add new Expenditure", new_expenditure_path(@group) %>
+  </div>
+</div>

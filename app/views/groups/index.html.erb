@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="group-title">
+  <h1>Groups</h1>
+</div>
+
+<div id="group-index">
+  <% @groups.each do |group| %>
+    <%= render group %>
+    
+  <% end %>
+</div>
+
+ <%= link_to "New group", new_group_path, class: "new-group" %>
+ <%# <%= link_to "Delete", @group, class: "delete-group" %>
