@@ -13,17 +13,17 @@
     </div>
   <% end %>
 
-  <div class="my-5">
+  <div class="my-5 group-option d-grp1">
     <%= form.label :name %>
     <%= form.text_field :name, required: true %>
   </div>
 
-  <div class="my-5">
+  <div class="my-5 group-option d-grp2">
     <%= form.label :amount %>
     <%= form.number_field :amount, required: true %>
   </div>
 
-  <div class="my-5">
+  <div class="my-5 group-option d-grp3">
     <%= form.label :group_id %>
     <div class="mt-1 rounded-md shadow-sm">
       <%=form.collection_select :group_id, Group.order(:name), :id, :name  %>
@@ -31,7 +31,7 @@
   </div>
 
 
-  <div class="inline">
+  <div class="inline group-option-btn" >
     <%= form.submit "Add new Category" %>
   </div>
 <% end %>

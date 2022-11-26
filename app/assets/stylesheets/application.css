@@ -17,6 +17,34 @@ h1 {
   justify-content: center;
 }
 
+.contents {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 2em;
+  background-color: #e7ebef;
+}
+
+.group-option {
+    gap: 2em;
+}
+
+.group-option-btn input {
+  padding: 10px;
+}
+
+.arrow-back {
+  padding: 10px;
+}
+
+.d-grp1 {
+  gap: 3em;
+}
+
+.d-grp3 {
+  gap: 3em;
+}
+
 .splash-btn {
   display: flex;
   justify-content: space-evenly;
@@ -71,7 +99,7 @@ h3 {
   color: #434b54;
   width: 80%;
   height: 5em;
-  border: 1px solid #fff;
+  border: 1px solid #434b54;
 }
 
 #user_password {
@@ -94,11 +122,11 @@ label {
 }
 
 a {
-  background-color: #51b523;
+  background-color: #3f75cfd4;;
   margin-top: 10px;
   font-size: 30px;
   padding: 5px;
-  width: 80%;
+  width: 25%;
   color: #434b54;
   text-decoration: none;
 }
@@ -260,8 +288,8 @@ a {
 }
 
 .new-expend-name {
-  flex-direction: column;
-  margin: 10px;
+    display: flex;
+    gap: 3em;
 }
 
 .inline input {
@@ -270,8 +298,8 @@ a {
 }
 
 .new-expend-icon {
-  margin-bottom: 10px;
-  background-color: #e8edf3;
+  display: flex;
+  gap: 3.5em;
 }
 
 #group_name {
@@ -279,10 +307,11 @@ a {
 }
 
 .new-expend-cont {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  background-color: #e7ebef;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 2em;
+    background-color: #e7ebef;
 }
 
 @media only screen and (min-width: 768px) {
@@ -439,4 +468,30 @@ a {
   .back-expend-btn a {
     width: 40%;
   }
+
+  .group-option-btn input {
+    padding: 10px;
+  }
+  
+  .arrow-back {
+    padding: 10px;
+  }
+  
+  .d-grp1 {
+    gap: 3em;
+  }
+  
+  .d-grp3 {
+    gap: 3em;
+  }
+
+  .sign-out-btnn {
+    width: 80%;
+  }
+
+.sign-up-btnn input{
+  width: 80%;
+  height: 5em;
+}
+
 }
