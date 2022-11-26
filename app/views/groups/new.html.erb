@@ -13,18 +13,20 @@
     </div>
   <% end %>
 
-  <div class="my-5">
+<div class="new-expend-cont">
+  <div class="new-expend-name">
     <%= form.label :name %>
     <%= form.text_field :name, required: true %>
   </div>
 
-  <div class="my-5">
+  <div class="new-expend-icon">
     <%= form.label :icon %>
     <%= form.text_field :icon, required: true %>
   </div>
 
   <div class="inline">
     <%= form.submit "Add A New Category" %>
+  </div>
   </div>
 <% end %>
 

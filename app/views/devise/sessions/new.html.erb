@@ -6,12 +6,12 @@
 </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div class="field log-in-email">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="field log-in-pass">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
@@ -23,7 +23,7 @@
     </div>
   <% end %>
 
-  <div class="actions">
+  <div class="actions log-in-btn">
     <%= f.submit "Log in" %>
   </div>
 <% end %>

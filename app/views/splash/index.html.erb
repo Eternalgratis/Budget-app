@@ -3,17 +3,22 @@
     <%# <%= image_tag('logos/rails-img.jpg', class: 'splash-logo') %>
 
   <div class='btn-group flex'>
-      <%# <title>WELCOME TO THE WHOLESOME BUDGET APP</title> %>
         <% if user_signed_in?%>
-              <h3>WELCOME <%= current_user.name %> TO THE WHOLESOME BUDGET APP</h3>
+              <h1>WHOLESOME BUDGET</h1>
              <div class="splash-btn">
                 <%= link_to 'View Group', groups_path, class: 'view-grp-btn' %>
                 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'sign-out-btn' %>
              </div>
 
               <% else %>
+              <div class="splash-hmpg">
+                 <%# <%= image_tag('logos/hamburger.png' )%>
+                 <h1> WHOLESOME BUDGET APP </h1>
+              </div>
+              <div class="splash-hmpg-btn">
               <%= link_to 'Log In', new_user_session_path, class: 'log-in-btn' %>
               <%= link_to 'Sign Up',  new_user_registration_path, class: 'sign-up-btn' %>
+              </div>
         <% end %>
   </div>
 </div>

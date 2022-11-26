@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-    before(:all) do
-        @user = User.new(
-        name: 'Teetee',
-        email: 'teetee1@gmail.com',
-        password: 'teetee12'
-        )
+  before(:all) do
+    @user = User.new(
+      name: 'Teetee',
+      email: 'teetee1@gmail.com',
+      password: 'teetee12'
+    )
   end
 
   it '@user created should be valid' do

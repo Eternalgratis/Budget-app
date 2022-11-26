@@ -1,12 +1,14 @@
-<div>
-  <p>
-    <strong>Name:</strong>
-    <%= @expenditure.name %>
-  </p>
+<div id="expend">
+  <% @group.expenditures.each do |expenditure| %>
+   <div class="exp-cont">
+      <p class="exp-name">
+        <%= expenditure.name %>
+      </p>
 
-  <p>
-    <strong>Amount:</strong>
-    <%= @expenditure.amount %>
-  </p>
-
+      <p class="exp-amount">
+         <%= expenditure.amount %>
+      </p>
+   </div>
+  
+  <% end %>
 </div>

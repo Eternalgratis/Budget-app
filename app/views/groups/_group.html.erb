@@ -1,17 +1,11 @@
-<div id="<%= dom_id group %>">
-
-<div class ="group-cont">
-<div>
+ <div class ="group-cont group-item">
   <p>
-    <strong>Name:</strong>
+      <img class="rails-img" src="<%= group.icon %>" alt="<%= group.icon %>" />
+    </p>
+  <p class="group-name">
     <%= group.name %>
   </p>
-</div>
-<div>
-  <p>
-    <strong>Icon:</strong>
-    <img src="<%= group.icon %>" alt="<%= group.icon %>" width="100px" />
-  </p>
+
+      <%= link_to "Show this group", group, class:"group-show-link" %>
+  
   </div>
- </div>
-</div>

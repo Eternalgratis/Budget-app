@@ -1,0 +1,14 @@
+ <div class ="group-cont group-item">
+   <p>
+      <img class="rails-img icon-show" src="<%= @group.icon %>" alt="<%= @group.icon %>" />
+  </p>
+  <p class="group-name">
+    <%= @group.name %>
+  </p>
+
+    <div class="total-expend">
+       total_expenditure 
+       <%= number_to_currency(@group.sumup) %>
+    </div>
+  
+  </div>
