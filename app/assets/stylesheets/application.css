@@ -84,10 +84,9 @@ h3 {
 .sign-out-btn,
 .sign-up-btn {
   background-color: #51b523;
-  margin-top: 10px;
-  font-size: 20px;
+  margin: 10px;
+  font-size: 30px;
   padding: 5px;
-  color: #434b54;
   text-decoration: none;
 }
 
@@ -110,7 +109,7 @@ h3 {
 }
 
 .field {
-  background-color: #e8ebf1;
+  background-color: #5d8ee1d4;
 }
 
 input.name {
@@ -118,16 +117,20 @@ input.name {
 }
 
 label {
+  margin-top: 1rem;
   color: grey;
 }
 
+.forgot-password {
+  background-color: red;
+}
+
 a {
-  background-color: #3f75cfd4;
-  margin-top: 10px;
+  background-color: #51b523;
+  border-radius: 1rem;
   font-size: 30px;
-  padding: 5px;
-  width: 25%;
-  color: #434b54;
+  padding: 20px;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -276,14 +279,23 @@ a {
 }
 
 .actions input {
-  background-color: #51b523;
+  background-color: #3f75cfd4;
+  border-radius: 1rem;
+  width: 10%;
+  height: 10vh;
+  color: #fff;
+  padding: 0.8rem;
 }
 
 .log-in-pass {
+  display: flex;
+  gap: 0.8rem;
   font-size: 22px;
 }
 
 .log-in-email {
+  display: flex;
+  gap: 2rem;
   font-size: 22px;
 }
 
@@ -293,8 +305,14 @@ a {
 }
 
 .inline input {
-  margin-bottom: 10px;
-  background-color: #e7ebef;
+  width: 50%;
+  height: 10vh;
+  color: #fff;
+  font-size: 20px;
+  padding: 1rem;
+  margin-left: 5rem;
+  border-radius: 1rem;
+  background-color: #3778c2;
 }
 
 .new-expend-icon {
@@ -303,7 +321,21 @@ a {
 }
 
 #group_name {
-  width: 60%;
+  width: 50%;
+  height: 10vh;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #3f75cfd4;
+}
+
+#group_icon {
+  width: 50%;
+  height: 10vh;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #3f75cfd4;
 }
 
 .new-expend-cont {
@@ -332,7 +364,8 @@ a {
   h1 {
     display: flex;
     padding: 10px;
-    color: #434b54;
+    color: #fff;
+    font-size: 40px;
     align-items: center;
     background-color: #3778c2;
     justify-content: center;
@@ -368,8 +401,8 @@ a {
   .sign-up-btn {
     background-color: #51b523;
     margin: 30px;
-    font-size: 20px;
-    padding: 5px;
+    font-size: 26px;
+    padding: 20px;
     border-radius: 10px;
     color: #fff;
     text-decoration: none;
@@ -381,17 +414,22 @@ a {
   }
 
   #user_email {
-    color: #fff;
-    width: 80%;
+    margin-bottom: 2rem;
+    background-color: #5d8ee1d4;
+    width: 50%;
     height: 5em;
-    border: 1px solid #fff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 1rem;
   }
 
   #user_password {
-    width: 80%;
+    background-color: #5d8ee1d4;
+    width: 50%;
     height: 5em;
-    color: #fff;
+    padding: 20px;
     border: 1px solid #fff;
+    border-radius: 1rem;
   }
 
   .field {
@@ -403,12 +441,16 @@ a {
   }
 
   label {
+    margin-top: 1rem;
     color: grey;
+    font-size: 20px;
   }
 
   a {
-    width: 80%;
+    height: 12vh;
+    width: 50%;
     margin: 2em;
+    /* margin: 2em; */
   }
 
   .sign-up-container {
@@ -490,7 +532,12 @@ a {
   }
 
   .sign-up-btnn input {
-    width: 80%;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1rem;
+    background-color: #3f75cfd4;
+    width: 50%;
     height: 5em;
   }
+
 }
